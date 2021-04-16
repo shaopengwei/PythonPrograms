@@ -1,0 +1,15 @@
+安装flake8   pip install flake8
+在pycharm中配置。Pycharm->Perferences->Tools->External Tools，点击“+”，填写配置
+Program :$PyInterpreterDirectory$/python3.7   （自己根据情况改下）
+Arguments: -m flake8 --show-source --statistics $FilePathRelativeToProjectRoot$ (这么写就行，检查的时候点那个文件或者目录就检查哪个)
+Working directory：$ProjectFileDir$（这么写就行）
+确定，apply，ok之后就配完了
+Flake8的使用：用PyCharm打开你所需要使用flake8的项目，Tools-->External Tools选择刚才添加的flake8就ok啦。
+
+
+python3 -m pip install flake8
+python3 -m pip install flake8-bugbear
+python3 -m pip install flake8-comprehensions
+
+
+cat ~/.config/flake8
